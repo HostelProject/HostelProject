@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "237809822185",
+    "project_id": "hostel-project-662ee",
+    "storage_bucket": "hostel-project-662ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237809822185:android:15753ad135506ff3da0378",
+        "android_client_info": {
+          "package_name": "com.example.hostelproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237809822185-2hjoahsbl4au1ccuco4bdvi5da5muu82.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hostelproject",
+            "certificate_hash": "41757e2be8878c7773e83b180e1d6eea63294c3d"
+          }
+        },
+        {
+          "client_id": "237809822185-hq4s4opknj9s8l50hi5drpq6saqo9tla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGpslDQ11tpJWpDiLUOueR693sAacafH8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237809822185-hq4s4opknj9s8l50hi5drpq6saqo9tla.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
