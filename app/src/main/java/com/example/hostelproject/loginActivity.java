@@ -1,12 +1,15 @@
 package com.example.hostelproject;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
+import android.widget.AlphabetIndexer;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -103,4 +106,25 @@ public class loginActivity extends AppCompatActivity {
     private void openSignup() {
         startActivity(new Intent(loginActivity.this, signUpActivity.class));
     }
+
+    /*
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this)
+                .setTitle("Really Exit?")
+                .setMessage("Are you sure you want to exit?")
+                .setNegativeButton(android.R.string.no, null)
+                .setPositiveButton(android.R.string.yes, new View.OnClickListener(){
+                    @Override
+                            public void onClick(View v) {
+                                loginActivity.super.onBackPressed();
+                            }
+                        }).create().show();
+
+
+
+        //super.onBackPressed();
+    }
+
+     */
 }

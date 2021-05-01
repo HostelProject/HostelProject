@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="HOME" />
+
+        <item
+            android:id="@+id/nav_rules"
+            android:icon="@drawable/ic_rule"
+            android:title="RULES" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+    </group>
+
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/profile"
+                    android:icon="@drawable/ic_profile"
+                    android:title="Profile" />
+
+                <item
+                    android:icon="@drawable/ic_baseline_upgrade_24"
+                    android:id="@+id/upgrade"
+                    android:title="Upgrade" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:icon="@drawable/ic_contact_support"
+                    android:id="@+id/contact_us"
+                    android:title="Contact us" />
+
+                <item
+                    android:icon="@drawable/ic_rate_us"
+                    android:id="@+id/rate_us"
+                    android:title="Rate us" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
