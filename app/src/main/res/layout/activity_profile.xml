@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.profileActivity">
+
+    <TextView
+        android:id="@+id/profilename"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Name"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/profilephone"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/profilename"
+        android:layout_marginTop="40dp"
+        android:hint="Phone Number"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/profilecollege"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/profilephone"
+        android:layout_marginTop="40dp"
+        android:hint="College"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/updateprofile"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@+id/profilecollege"
+        android:layout_marginTop="80dp"
+        android:text="Tap to Update Profile"
+        android:textSize="30sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Profile"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"/>
+</RelativeLayout>

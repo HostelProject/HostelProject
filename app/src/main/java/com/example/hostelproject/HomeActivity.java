@@ -7,9 +7,11 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.hostelproject.profile.profileActivity;
 import com.google.android.material.navigation.NavigationView;
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -55,6 +57,18 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        return false;
+
+        switch (item.getItemId()){
+            case R.id.profile:
+                openProfile();
+
+        }
+
+        return true;
     }
+
+    private void openProfile() {
+        startActivity(new Intent(HomeActivity.this, profileActivity.class));
+    }
+
 }
