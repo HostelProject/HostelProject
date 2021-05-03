@@ -20,7 +20,6 @@ import com.google.firebase.auth.FirebaseAuth;
 public class signUpActivity extends AppCompatActivity {
 
     private EditText signupEmail, signupPassword;
-    private Button signupButton;
     private FirebaseAuth mAuth;
 
     @Override
@@ -31,7 +30,7 @@ public class signUpActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         signupEmail = findViewById(R.id.signupemail);
         signupPassword = findViewById(R.id.signuppassword);
-        signupButton = findViewById(R.id.signupbutton);
+        Button signupButton = findViewById(R.id.signupbutton);
 
         signupButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,7 +72,7 @@ public class signUpActivity extends AppCompatActivity {
                     tohome();
                 }
                 else {
-                    Toast.makeText(signUpActivity.this, "The user is already registered, or please enter valid email/password,", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(signUpActivity.this, "The email/password is Invalid, or The user is already registered ", Toast.LENGTH_SHORT).show();
                 }
             }
         });

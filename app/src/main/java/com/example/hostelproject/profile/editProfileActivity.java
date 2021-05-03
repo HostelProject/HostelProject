@@ -42,7 +42,7 @@ public class editProfileActivity extends AppCompatActivity {
         String names = name.getText().toString().trim();
         String numbers = phone.getText().toString().trim();
         String colleges = college.getText().toString().trim();
-        String userID = kAuth.getCurrentUser().getUid();
+        String userID = kAuth.getCurrentUser().getUid().toString();
 
         Map<String, Object> user = new HashMap<>();
         user.put("name", names);
@@ -50,7 +50,6 @@ public class editProfileActivity extends AppCompatActivity {
         user.put("college", colleges);
         db.collection("Users").document(userID).set(user)
                 .addOnSuccessListener(aVoid -> Toast.makeText(editProfileActivity.this, "Profile updated", Toast.LENGTH_SHORT).show());
-
-        startActivity(new Intent(this, profileActivity.class));
+        startActivity(new Intent(editProfileActivity.this, profileActivity.class));
     }
 }

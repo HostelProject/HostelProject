@@ -11,20 +11,25 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.hostelproject.profile.editProfileActivity;
 import com.example.hostelproject.profile.profileActivity;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    DrawerLayout drawerLayout;
-    NavigationView navigationView;
-    Toolbar toolbar;
+    private DrawerLayout drawerLayout;
+    private NavigationView navigationView;
+    private Toolbar toolbar;
+    private FirebaseAuth mAuth;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        mAuth = FirebaseAuth.getInstance();
 
         drawerLayout = findViewById(R.id.drawerLayout);
         navigationView = findViewById(R.id.nav_head);
@@ -58,13 +63,19 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-        switch (item.getItemId()){
-            case R.id.profile:
-                openProfile();
-
+        if (item.getItemId()==R.id.profile){
+            openProfile();
+        }
+        else if (item.getItemId()==R.id.nav_logout){
+            openLogin();
         }
 
         return true;
+    }
+
+    private void openLogin() {
+        mAuth.signOut();
+        startActivity(new Intent(HomeActivity.this, loginActivity.class));
     }
 
     private void openProfile() {
