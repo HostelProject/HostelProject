@@ -10,13 +10,18 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_margin="5dp"
-        android:background="@drawable/tool_bar_style"
+        android:background="@drawable/gradient_drawable"
         android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:navigationIcon="@drawable/menu"
         app:title="MIT ADT HOSTEL"
-        app:titleTextColor="@color/white"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="4dp" />
+        app:titleTextColor="@color/purple_700"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

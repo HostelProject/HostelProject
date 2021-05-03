@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".signUpActivity">
+    tools:context=".signUpActivity"
+    android:background="@drawable/gradient_drawable" >
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id ="@+id/textView2"
+        android:layout_width ="match_parent"
+        android:layout_height ="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="30dp"
         android:text="Signup Page"
